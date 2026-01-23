@@ -1,5 +1,6 @@
-* {
-/* RESET */
+/* ============================= */
+/* RESET GLOBAL */
+/* ============================= */
 * {
     margin: 0;
     padding: 0;
@@ -7,35 +8,87 @@
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* HEADER FOTO */
+body {
+    background: #f4f6f8;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
 header {
     position: relative;
-    min-height: 70vh;
+    min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     color: white;
+    padding: 40px 20px;
 
     background:
-        linear-gradient(
-            rgba(15, 23, 42, 0.75),
-            rgba(15, 23, 42, 0.85)
-        ),
-        url("IMG_20260118_140601.jpg");
+        url("aluepande.jpg");
 
     background-size: cover;
     background-position: center;
 }
 
-
 header h1 {
-    font-size: 42px;
+    font-size: 36px;
 }
 
+header h3 {
+    margin-top: 10px;
+    font-weight: normal;
+}
 
-    
+/* ============================= */
+/* NAVIGATION */
+/* ============================= */
+nav {
+    background: white;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: #1e6091;
+    font-weight: 600;
+}
+
+/* ============================= */
+/* SECTION */
+/* ============================= */
+section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    color: #1e6091;
+    border-bottom: 3px solid #1e6091;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
 /* ============================= */
 /* TABLE (INFO DESA) */
 /* ============================= */
@@ -62,22 +115,43 @@ table tr:nth-child(even) {
     background-color: #f4f6f8;
 }
 
-table tr:hover {
-    background-color: #e6f0ff;
+/* ============================= */
+/* BERITA */
+/* ============================= */
+.profil-item {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
 }
 
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", Arial, sans-serif;
+.profil-item img {
+    width: 320px;
+    border-radius: 10px;
 }
 
+/* ============================= */
+/* GALERI */
+/* ============================= */
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.galeri img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ============================= */
 /* STRUKTUR DESA */
+/* ============================= */
 .struktur {
     display: flex;
     flex-direction: column;
-    align-items: center; /* KUNCI TENGAH */
+    align-items: center;
     margin-top: 40px;
 }
 
@@ -96,10 +170,6 @@ table tr:hover {
     color: white;
 }
 
-.utama h3 {
-    color: white;
-}
-
 .garis {
     width: 2px;
     height: 40px;
@@ -112,104 +182,12 @@ table tr:hover {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
     width: 100%;
-    justify-items: center; /* PUSAT SETIAP CARD */
+    justify-items: center;
 }
 
-
-body {
-    background: #f4f6f8;
-    color: #333;
-    line-height: 1.8;
-}
-
-/* HEADER */
-header {
-
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-header h1 {
-    font-size: 32px;
-}
-
-header h3 {
-    margin-top: 10px;
-    font-weight: normal;
-}
-
-/* NAV */
-nav {
-    background: white;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 15px;
-    position: sticky;
-    top: 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-nav a {
-    text-decoration: none;
-    color: #1e6091;
-    font-weight: 600;
-}
-
-/* SECTION */
-section {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 30px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-}
-
-section h2 {
-    color: #1e6091;
-    border-bottom: 3px solid #1e6091;
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-h3 {
-    color: #ffffff;
-    margin: 20px 0 10px;
-}
-
-p {
-    text-align: justify;
-    margin-bottom: 15px;
-}
-
-/* BERITA */
-.profil-item {
-    display: flex;
-    gap: 25px;
-}
-
-.profil-item img {
-    width: 350px;
-    border-radius: 8px;
-}
-
-/* GALERI */
-.galeri {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-
-.galeri-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
+/* ============================= */
 /* FOOTER */
+/* ============================= */
 footer {
     background: #1e293b;
     color: white;
@@ -218,8 +196,29 @@ footer {
     margin-top: 50px;
 }
 
-/* RESPONSIVE */
+/* ============================= */
+/* RESPONSIVE (HP) */
+/* ============================= */
 @media (max-width: 768px) {
+
+    header {
+        min-height: 45vh;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    section {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+
     .profil-item {
         flex-direction: column;
     }
@@ -228,12 +227,7 @@ footer {
         width: 100%;
     }
 
-    nav {
-        flex-wrap: wrap;
-        gap: 15px;
+    table {
+        font-size: 14px;
     }
-
-
-
-    
 }
