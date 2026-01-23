@@ -1,0 +1,239 @@
+* {
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* HEADER FOTO */
+header {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.75),
+            rgba(15, 23, 42, 0.85)
+        ),
+        url("IMG_20260118_140601.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+header h1 {
+    font-size: 42px;
+}
+
+
+    
+/* ============================= */
+/* TABLE (INFO DESA) */
+/* ============================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+}
+
+table th {
+    background-color: #1e6091;
+    color: #fff;
+    text-align: left;
+}
+
+table tr:nth-child(even) {
+    background-color: #f4f6f8;
+}
+
+table tr:hover {
+    background-color: #e6f0ff;
+}
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* STRUKTUR DESA */
+.struktur {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* KUNCI TENGAH */
+    margin-top: 40px;
+}
+
+.jabatan {
+    background: white;
+    border-radius: 14px;
+    padding: 20px;
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.utama {
+    background: linear-gradient(135deg, #1e6091, #2c7be5);
+    color: white;
+}
+
+.utama h3 {
+    color: white;
+}
+
+.garis {
+    width: 2px;
+    height: 40px;
+    background: #94a3b8;
+    margin: 25px 0;
+}
+
+.struktur-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    width: 100%;
+    justify-items: center; /* PUSAT SETIAP CARD */
+}
+
+
+body {
+    background: #f4f6f8;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* HEADER */
+header {
+
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header h3 {
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+/* NAV */
+nav {
+    background: white;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: #1e6091;
+    font-weight: 600;
+}
+
+/* SECTION */
+section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    color: #1e6091;
+    border-bottom: 3px solid #1e6091;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #ffffff;
+    margin: 20px 0 10px;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* BERITA */
+.profil-item {
+    display: flex;
+    gap: 25px;
+}
+
+.profil-item img {
+    width: 350px;
+    border-radius: 8px;
+}
+
+/* GALERI */
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.galeri-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .profil-item {
+        flex-direction: column;
+    }
+
+    .profil-item img {
+        width: 100%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+
+
+    
+}
